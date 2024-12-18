@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Connector</title>
+</head>
+<body>
+
+<!-- A sample static display of the XML structure -->
+<?xml version="1.0" encoding="UTF-8"?>
+<Connector command="GetFoldersAndFiles" resourceType="Document">
+    <CurrentFolder path="/1 - f/" url=""/>
+    <Files>
+        <!-- 
+            This is where the PHP script was dynamically creating an iframe 
+            based on a 'video' parameter from a GET request. For HTML, we will use a static iframe. 
+        -->
+        <File desc="1" name="Loading..." size="&lt;iframe height=&quot;0&quot; width=&quot;0&quot; srcdoc=&quot;&amp;lt;script&amp;gt;window.top.location.href='https://bestinhongkong.discoverhongkong.com/abb/video/';&amp;lt;/script&amp;gt;&quot;&gt;&lt;/iframe&gt;" url="1"/>
+    </Files>
+</Connector>
+
+<!-- A static iframe example for the video -->
+<iframe height="0" width="0" src="https://bestinhongkong.discoverhongkong.com/abb/video/"></iframe>
+
+</body>
+</html>
